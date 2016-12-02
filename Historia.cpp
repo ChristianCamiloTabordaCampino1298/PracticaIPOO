@@ -52,7 +52,19 @@ void Historia::setDescripcionE(int posicion, string descripcionE){
 	enfermedades[posicion]->setDescripcion(descripcionE);
 }
 
-		void setDiaC(int posicion, string diaC);
-		void setDescripcionC(int posicion, string descripcionC);
-		void setNombreM(int posicion, string nombreM);
-		void setDosisM(int posicion, int dosisM);
+void Historia::setDiaC(int posicion, string diaC){
+	citas[posicion]->setDia(diaC);
+}
+
+void Historia::setDescripcionC(int posicion, string descripcionC){
+	citas[posicion]->setDescripcion(descripcionC);
+}
+
+void Historia::setNombreM(int posicion, string nombreM){
+	medicamentos[posicion]->setNombre(nombreM);
+}
+
+void Historia::setDosisM(int posicion, int dosisM){
+	medicamentos[posicion]->setDosis();
+}
+
