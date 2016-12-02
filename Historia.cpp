@@ -2,6 +2,18 @@
 
 Historia::Historia(){}
 
+void Historia::ingresarEnfermedad(Enfermedad * E){
+	enfermedades.push_back(E);
+}
+
+void Historia::ingresarCita(Cita * C){
+	citas.push_back(C);
+}
+
+void Historia::ingresarMedicamento(Medicamento * M){
+	medicamentos.push_back(M);
+}
+
 Historia::~Historia(){
 	for(int x=0; x<enfermedades.size(); x++){
 		delete enfermedades[x];
@@ -65,6 +77,6 @@ void Historia::setNombreM(int posicion, string nombreM){
 }
 
 void Historia::setDosisM(int posicion, int dosisM){
-	medicamentos[posicion]->setDosis();
+	medicamentos[posicion]->setDosis(dosisM);
 }
 

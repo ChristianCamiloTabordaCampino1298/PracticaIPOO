@@ -4,7 +4,7 @@
 
 using std::string;
 
-Cita::Cita(){}
+
 
 Cita::Cita(string dia, string descripcion){
 	this->dia=dia;

@@ -1,4 +1,4 @@
-#include "Medicamento"
+#include "Medicamento.h"
 
 Medicamento::Medicamento(string nombre, int dosis){
 	this->nombre = nombre;

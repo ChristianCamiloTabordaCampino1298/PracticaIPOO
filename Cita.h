@@ -20,11 +20,6 @@ class Cita{
 	void setDia(string dia);
 	void setDescripcion(string descripcion);
 
-}
-
-
-
-
-
+};
 
 #endif

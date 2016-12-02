@@ -4,7 +4,7 @@
 
 using std::string;
 
-Paciente::Paciente(){}
+
 
 Paciente::Paciente(int cedula, string nombre, string sexo, int edad){
 	this->cedula=cedula;
@@ -13,7 +13,7 @@ Paciente::Paciente(int cedula, string nombre, string sexo, int edad){
 	this->edad=edad;
 }
 
-int Paciente::getcedula(){
+int Paciente::getCedula(){
 	return cedula;
 }
 
@@ -30,7 +30,7 @@ int Paciente::getEdad(){
 }
 
 void Paciente::setCedula(int cedula){
-	this cedula=cedula;
+	this->cedula=cedula;
 }
 
 void Paciente::setNombre(string nombre){

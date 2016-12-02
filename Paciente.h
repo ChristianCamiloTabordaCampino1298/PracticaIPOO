@@ -26,7 +26,7 @@ class Paciente{
 	void setSexo(string sexo);
 
 
-}
+};
 
 
 
